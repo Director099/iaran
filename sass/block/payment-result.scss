@@ -1,0 +1,17 @@
+.payment-result {
+  text-align: center;
+  margin: 50px 0;
+
+  &__icon {
+    fill: $color-1;
+    margin-bottom: 20px;
+
+    &--fail {
+      fill: $color-danger;
+    }
+  }
+
+  &__text {
+    font-size: $fz--h4;
+  }
+}

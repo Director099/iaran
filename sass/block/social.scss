@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    fill: $color-1;
+    font-size: 0;
+
+    &:hover {
+      .icon {
+        fill: lighten($color-1, 7%);
+      }
+    }
+
+    .icon {
+      transition: $transition-time;
+    }
+  }
+
+  .icon--ident {
+    margin-top: 5px;
+  }
+
+  @media(min-width: $screen-md) {
+    justify-content: flex-end;
+  }
+}

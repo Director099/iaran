@@ -1,0 +1,30 @@
+.account {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: block;
+    margin-left: 20px;
+    text-decoration: none;
+    color: $black;
+    cursor: pointer;
+
+    .icon {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+      fill: $color-1;
+      transition: $transition-time;
+    }
+
+    &:hover {
+      color: $black;
+
+      .icon {
+        fill: lighten($color-1, 7%);
+      }
+    }
+  }
+}

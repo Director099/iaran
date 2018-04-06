@@ -1,0 +1,32 @@
+.page-footer {
+  background: $color-4;
+
+  &__container {
+    @include make-container-max-widths();
+    @include make-container();
+
+    background: url("img/footer-teheran.png") no-repeat 90% -70%;
+  }
+
+  &__row {
+    @include make-row();
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  &__name {
+    margin: 0;
+    padding: 28px 0;
+    text-align: center;
+    background: $color-3 url("img/teheran_footer.png") no-repeat 25% 20%;
+    background-size: 19%;
+    color: $white;
+    font-size: 0;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

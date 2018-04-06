@@ -1,0 +1,21 @@
+.cash {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    margin: 0 10px;
+
+    // &:hover {
+    //   .icon {
+    //     fill: lighten($color-1, 7%);
+    //   }
+    // }
+
+    .icon {
+      fill: $color-1;
+      transition: $transition-time;
+    }
+  }
+}

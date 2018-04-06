@@ -1,0 +1,50 @@
+.form-reservation {
+  max-width: 600px;
+  margin: 0 auto;
+  background: $color-1;
+  padding: 25px 6%;
+
+  &__group {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    @include make-row();
+
+    margin-bottom: 25px;
+  }
+
+  &__block {
+    @include make-col-ready();
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__control {
+    display: block;
+    padding: 4px 30px;
+    width: 100%;
+    border: none;
+    background-image: url('img/sprite/calendar.svg');
+    background-size: 14px;
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+  }
+}

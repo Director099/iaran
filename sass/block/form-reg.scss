@@ -1,0 +1,36 @@
+.form-reg {
+  padding: 20px;
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15px;
+
+    @media(min-width: $screen-sm) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__control {
+    width: 100%;
+    padding: 5px 10px;
+  }
+
+  &__block {
+    width: 100%;
+  }
+
+
+  &__text {
+    min-width: 210px;
+    margin: 5px 0;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+  }
+}

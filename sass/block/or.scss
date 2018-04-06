@@ -1,0 +1,23 @@
+.or {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin: 5px 0;
+  font-size: $fz;
+
+  &::after,
+  &::before {
+    content: '';
+    flex-grow: 1;
+    height: 1px;
+    background: #666;
+  }
+
+  &::after {
+    margin-left: 10px;
+  }
+
+  &::before {
+    margin-right: 10px;
+  }
+}

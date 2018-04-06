@@ -1,0 +1,55 @@
+@@include('_include/lk-header.html')
+  <main role="main">
+    <section class="container">
+      <h1 class="main-title">Бронирование квартиры</h1>
+      <div class="confirmations">
+        <div class="row">
+          <div class="col-lg-6">
+            <section class="conf-info">
+              <h2 class="conf-info__title">Подробности бронирования</h2>
+              <p class="conf-info__text"><span>Заезд</span> 12/12/2018</p>
+              <p class="conf-info__text"><span>Выезд</span> 19/12/2018</p>
+              <p class="conf-info__text"><span>Количество ночей</span> 7</p>
+              <p class="conf-info__text"><span>Количество гостей</span> 2</p>
+            </section>
+          </div>
+          <div class="col-lg-6">
+            <section class="conf-info">
+              <h2 class="conf-info__title">Информация о стоимости</h2>
+              <p class="conf-info__text"><span>Цена за 7 ночей</span> 20 $</p>
+              <p class="conf-info__text"><span>Итого:</span> 20 $</p>
+            </section>
+          </div>
+        </div>
+        <hr>
+        <form class="form-confirm" action="page-successful.html">
+          <strong class="form-confirm__label">Информация для бронирования</strong>
+          <div class="form-confirm__row">
+            <label class="form-confirm__col">
+              <input class="form-confirm__control" type="text" placeholder="Имя" required>
+              <!-- <p class="form-error">Не корректно введено имя</p> -->
+            </label>
+            <label class="form-confirm__col">
+              <input class="form-confirm__control" type="text" placeholder="Фамилия" required>
+              <!-- <p class="form-error">Не корректно введено фамилия</p> -->
+            </label>
+            <label class="form-confirm__col">
+              <input class="form-confirm__control" type="e-mail" placeholder="Ваш email" required>
+              <!-- <p class="form-error">Не корректно введен e-mail</p> -->
+            </label>
+            <label class="form-confirm__col">
+              <input class="form-confirm__control" type="tel" id="phone" placeholder="Телефон" required>
+              <!-- <p class="form-error">Не корректно введен телефон</p> -->
+            </label>
+          </div>
+          <strong class="form-confirm__label">Коментарии к бронированию</strong>
+          <textarea class="form-confirm__control" rows="10" placeholder="Пожеланию вы можете оставить свой комментарии к брони"></textarea>
+          <label class="form-confirm__checkbox">
+            <input type="checkbox" required checked> Я принимаю правила, <a href="#">условия и положение</a> о конфедициальности
+          </label>
+          <button class="btn btn--form">Перейти к оплате</button>
+        </form>
+      </div>
+    </section>
+  </main>
+@@include('_include/footer.html')

@@ -1,0 +1,81 @@
+.recall {
+  margin-bottom: 20px;
+
+  &__text {
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background: $color-recall;
+    border-bottom: 1px solid darken($color-recall, 15%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -17px;
+      left: 30px;
+      border: 7px solid transparent;
+      border-top: 10px solid darken($color-recall, 15%);
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 31px;
+      border: 6px solid transparent;
+      border-top: 9px solid $color-recall;
+      z-index: 1;
+    }
+  }
+
+  &__collapse {
+    position: relative;
+    height: 65px;
+    overflow: hidden;
+    transition: $transition-time;
+
+    p {
+      margin-bottom: 0;
+      font-family: "Proxima Nova", "Arial", sans-serif;
+      font-weight: 300;
+      // font-style: italic;
+      text-indent: 15px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      box-shadow: 0 0px 13px 15px rgba($color-recall, 0.9);
+    }
+  }
+
+  &__open {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0;
+    background: transparent;
+    border: none;
+    z-index: 1;
+    transform: translateY(5px);
+    transition: $transition-time;
+
+    .icon {
+      fill: darken($color-recall, 20%);
+    }
+
+    &.active {
+      transform: translateY(5px) rotate(180deg);
+    }
+  }
+
+  &__autor {
+    font-weight: 700;
+  }
+}

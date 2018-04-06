@@ -1,0 +1,23 @@
+.table-history {
+  max-width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+
+  th,
+  td {
+    padding: 10px 15px;
+    border-top: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    text-align: inherit;
+  }
+
+  thead {
+    background: $color-1;
+    color: $white;
+  }
+
+  &__img {
+    width: 80px;
+  }
+}

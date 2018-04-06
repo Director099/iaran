@@ -1,0 +1,20 @@
+@mixin triangle-sides() {
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 5px solid transparent;
+    border-right: 10px solid $color-1;
+  }
+
+  &::after {
+    left: -14px;
+  }
+
+  &::before {
+    right: -14px;
+    transform: translateY(-50%) rotate(-180deg);
+  }
+}

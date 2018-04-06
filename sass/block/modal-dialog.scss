@@ -1,0 +1,28 @@
+.modal-dialog {
+
+  &--ident {
+    position: relative;
+    margin: 25px 15px 0px;
+
+    @include media-breakpoint-up(sm) {
+        margin: 25px auto 0px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: block;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: $white;
+    color: $black;
+    z-index: 999999;
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,41 @@
+@@include('_include/lk-header.html')
+  <main role="main">
+    <section class="container">
+      <h1 class="main-title">Настройки профиля</h1>
+      <div class="confirmations">
+        <form class="form-setting" action="#" method="post">
+          <div class="form-setting__row">
+            <fieldset class="form-setting__column">
+              <legend class="form-setting__legend">Сменить пароль</legend>
+              <label class="form-setting__group">
+                <span>Старый пароль</span>
+                <input class="form-confirm__control" type="text" placeholder="Старый пароль" required="">
+              </label>
+              <label class="form-setting__group">
+                <span>Новый пароль</span>
+                <input class="form-confirm__control" type="text" placeholder="Новый пароль" required="">
+              </label>
+              <label class="form-setting__group">
+                <span>Повторите пароль</span>
+                <input class="form-confirm__control" type="text" placeholder="Повторите пароль" required="">
+              </label>
+            </fieldset>
+            <fieldset class="form-setting__column">
+              <legend class="form-setting__legend">Настройка логина</legend>
+              <label class="form-setting__group">
+                <span>Старый email</span>
+                <input class="form-confirm__control" type="text" placeholder="Имя" required="">
+              </label>
+              <label class="form-setting__group">
+                <span>Новый email</span>
+                <input class="form-confirm__control" type="text" placeholder="Имя" required="">
+              </label>
+            </fieldset>
+          </div>
+          <button class="btn btn--form">Сохранить</button>
+        </form>
+      </div>
+    </section>
+  </main>
+@@include('_include/footer.html')
+

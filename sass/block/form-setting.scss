@@ -1,0 +1,42 @@
+.form-setting {
+
+  &__row {
+    @include make-row();
+  }
+
+  &__column {
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include make-col-ready();
+
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+    border: none;
+  }
+
+  &__legend {
+    margin-bottom: 10px;
+    font-size: $fz--h4;
+    font-weight: 700;
+  }
+
+  &__group {
+    display: block;
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 280px;
+    width: 100%;
+  }
+}

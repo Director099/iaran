@@ -1,0 +1,17 @@
+.dropdown-menu {
+  padding: 0;
+  min-width: auto;
+
+  &__item {
+    padding: 5px 15px;
+    display: block;
+    color: $black;
+    white-space: nowrap;
+    transition: $transition-time;
+
+    &:hover {
+      background: $gray-lightest;
+      color: $black;
+    }
+  }
+}

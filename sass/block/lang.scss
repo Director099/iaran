@@ -1,0 +1,24 @@
+.lang {
+  margin: 0 0 0 10px;
+  padding: 0 0px 0 0px;
+
+  &__link {
+    color: $black;
+    transition: $transition-time;
+    padding-right: 15px;
+
+    &:hover {
+      color: $color-1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 60%;
+      border: 4px solid transparent;
+      border-top: 5px solid $color-1;
+      transform: translateY(-50%);
+    }
+  }
+}

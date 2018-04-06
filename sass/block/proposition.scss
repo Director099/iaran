@@ -1,0 +1,39 @@
+.proposition {
+  background: $color-4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0 0 10px 2px rgba($black, .3);
+
+  &__container {
+    @include make-container();
+    @include make-container-max-widths();
+
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    @include media-breakpoint-up(sm) {
+      @include make-col(6);
+    }
+
+    @include media-breakpoint-up(lg) {
+      @include make-col(5,25);
+    }
+
+    .icon {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 10px;
+      fill: $color-1;
+    }
+  }
+}

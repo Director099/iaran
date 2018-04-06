@@ -1,0 +1,57 @@
+.sorting {
+  background: $gray-lightest;
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  &__container {
+    position: relative;
+
+    @include make-container-max-widths();
+    @include make-container();
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__dropdown {
+
+    .dropdown-toggle {
+      position: relative;
+      padding-right: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 7px;
+        border: 4px solid transparent;
+        border-top: 5px solid;
+      }
+    }
+
+    a {
+      color: $black;
+    }
+
+    @media(min-width: $screen-md) {
+      position: absolute;
+      right: 15px;
+    }
+  }
+
+  @media(min-width: $screen-lg) {
+    padding-top: 35px;
+  }
+}

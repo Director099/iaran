@@ -1,0 +1,37 @@
+@@include('_include/header.html')
+  @@include('_include/search.html')
+  <main role="main">
+    <div class="sorting">
+      <div class="sorting__container">
+        <strong class="sorting__name">Надйенные квартиры по вашему запросу:</strong>
+        <!-- <strong class="sorting__name">Не найдены квартиры по вашему запросу:</strong> -->
+        <div class="sorting__dropdown dropdown show">
+          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сортировать по</a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-menu__item" href="#">Цена: по возрастанию</a>
+            <a class="dropdown-menu__item" href="#">Цена: по убыванию</a>
+            <a class="dropdown-menu__item" href="index.html">Все объекты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-apartaments">
+      <!-- Не нашел жидье -->
+<!--       <div class="list-apartaments__error">
+        <p class="alert alert-danger">Квартиры по вашему запросу не найдены</p>
+        <a class="btn btn--form" href="index.html">Вернуться на главную</a>
+      </div>
+ -->      <!-- Не нашел жидье -->
+      <section class="list-apartaments__row">
+        <article class="list-apartaments__column">
+          <a class="list-apartaments__item" href="single.html">
+            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-1.jpg')"></div>
+            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
+            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
+            <p class="list-apartaments__min">от 10$ За сутки</p>
+          </a>
+        </article>
+      </section>
+    </div>
+  </main>
+@@include('_include/footer.html')

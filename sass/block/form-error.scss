@@ -1,0 +1,13 @@
+.form-error {
+  font-size: 11px;
+  padding: 5px;
+  border: 1px solid $color-danger;
+  color: $color-danger;
+  margin-top: 5px;
+  margin-bottom: 0;
+
+  &--white {
+    border: 1px solid $white;
+    color: $white;
+  }
+}

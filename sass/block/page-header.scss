@@ -1,0 +1,48 @@
+.page-header {
+  box-shadow: 0 0 10px 1px rgba($black, 0.3);
+
+  &__container {
+    @include make-container-max-widths();
+    @include make-container();
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background: url("img/teheran-logo.png") no-repeat 89% 72%;
+
+    @media(min-width: $screen-md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__right {
+    display: flex;
+    margin-top: 10px;
+
+    @media(min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
+
+  &__tagline {
+    display: none;
+    font-size: 0;
+    margin: 0;
+    text-transform: uppercase;
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media(min-width: $screen-xl) {
+      display: block;
+    }
+  }
+}

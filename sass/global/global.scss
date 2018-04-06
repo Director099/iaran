@@ -1,0 +1,59 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font: 400 $fz "Proxima Nova", "Arial", sans-serif;
+  margin: 0;
+  color: $text-color;
+  background-image: url("img/tehran-logo__left.png"), url("img/tehran-logo__right.png");
+  background-repeat: no-repeat;
+  background-position: -100px 55%, 100% 30%;
+}
+
+a {
+  color: $color-link;
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: $transition-time;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-link--hover;
+  }
+}
+
+textarea,
+input {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+}
+
+button {
+  font-family: "Proxima Nova", "Arial", sans-serif;
+  transition: $transition-time;
+  cursor: pointer;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container--ident {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

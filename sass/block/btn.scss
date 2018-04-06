@@ -1,0 +1,53 @@
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 10px 15px;
+  color: $black;
+  transition: $transition-time;
+
+  &--form {
+    color: $black;
+    background: $btn-color__form;
+    border: none;
+    border-bottom: 1px solid #8e8935;
+
+    &:hover {
+      background: darken($btn-color__form, 15%);
+      color: $black;
+    }
+  }
+
+  &--map_link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    border: 1px solid $gray-lighten;
+
+    &:hover {
+      background: $gray-lightest;
+      color: $black;
+    }
+  }
+
+  &--facebook {
+    color: $black;
+    background: $color-main;
+    border: 1px solid transparent;
+
+    &:hover {
+      background: darken($color-main, 15%);
+      color: $black;
+    }
+  }
+
+  &--google {
+    color: $black;
+    background: $white;
+    border: 1px solid $gray-lighter;
+
+    &:hover {
+      background: lighten($gray-lightest, 3%);
+      color: $black;
+    }
+  }
+}

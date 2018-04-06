@@ -1,0 +1,136 @@
+.search {
+  background: $color-1;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  &__title {
+    color: $white;
+    margin-bottom: 15px;
+    margin-top: 10px;
+
+    @media(min-width: $screen-lg) {
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__form {
+    @include make-container();
+    @include make-container-max-widths();
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    @media(min-width: $screen-lg) {
+      // align-items: center;
+      text-align: center;
+      flex-direction: row;
+    }
+  }
+
+  &__control {
+    position: relative;
+    display: block;
+    padding: 7px 25px;
+
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: $white;
+    border-right: 1px solid $color-1;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+    &--calendar {
+      background-image: url("img/sprite/calendar.svg");
+      background-size: 14px;
+      background-position: 5px 50%;
+      background-repeat: no-repeat;
+    }
+
+    &--bed {
+      background-image: url("img/sprite/bed.svg");
+      background-size: 15px;
+      background-position: 5px 50%;
+      background-repeat: no-repeat;
+
+      padding: 7px 0px 7px 25px;
+
+      select {
+        background: transparent;
+        border: none;
+        width: 100%;
+        cursor: pointer;
+
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+
+      @media(min-width: $screen-lg) {
+        padding: 1px 0px 1px 25px;
+      }
+    }
+
+    &:focus,
+    &:hover {
+      outline: none;
+    }
+
+    select {
+
+      &:focus,
+      &:hover {
+        outline: none;
+      }
+    }
+
+    @media(min-width: $screen-lg) {
+      padding: 2px 25px;
+      max-width: 200px;
+      margin-bottom: 0px;
+    }
+  }
+
+  &__btn {
+    max-width: 120px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: $btn-color__form;
+    border: none;
+    border-bottom: 1px solid #8e8935;
+
+    &:hover {
+      background: darken($btn-color__form, 15%);
+    }
+
+    @media(min-width: $screen-lg) {
+      margin-left: 10px;
+      margin-right: initial;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 2px 5px;
+      max-width: 90px
+    }
+  }
+
+
+  ::-webkit-input-placeholder {color:#000;}
+  ::-moz-placeholder          {color:#000;}
+  :-moz-placeholder           {color:#000;}
+  :-ms-input-placeholder      {color:#000;}
+}
+
+.search-- {
+
+}
+
+
+

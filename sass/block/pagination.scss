@@ -1,0 +1,26 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+
+  &__link {
+    display: block;
+    padding: 3px 8px;
+    margin: 0 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    color: $black;
+    transition: $transition-time;
+
+    &:hover {
+      border: 1px solid $gray-lighten;
+    }
+
+    &.active {
+      background: $color-1;
+      color: $white;
+    }
+  }
+}

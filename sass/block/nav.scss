@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  margin-top: 0;
+
+  &__item {
+    width: 50%;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    transition: $transition-time;
+    color: $black;
+    cursor: pointer;
+
+    &.active {
+      background: $color-1;
+      color: $white;
+    }
+
+    &:hover {
+      background: lighten($color-1, 10%);
+      color: $white;
+    }
+  }
+}

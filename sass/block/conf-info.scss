@@ -1,0 +1,18 @@
+.conf-info {
+
+  &__title {
+    font-size: $fz--h4;
+    margin-top: 0;
+  }
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    span {
+      display: inline-block;
+      min-width: 180px;
+    }
+  }
+}

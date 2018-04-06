@@ -1,0 +1,44 @@
+.footer-short {
+  background: #e7e7e7;
+
+  &__container {
+    @include make-container-max-widths();
+    @include make-container();
+  }
+
+  &__row {
+    @include make-row();
+
+    align-items: center;
+  }
+
+  &__text {
+    display: block;
+    color: $black;
+    margin: 10px 0;
+    text-align: center;
+
+    &--left {
+      @media(min-width: $screen-md) {
+        text-align: left;
+      }
+    }
+
+    &--center {
+      @media(min-width: $screen-md) {
+        text-align: center;
+      }
+
+      a {
+        color: $black;
+        font-weight: 700;
+      }
+    }
+
+    &--right {
+      @media(min-width: $screen-md) {
+        text-align: right;
+      }
+    }
+  }
+}

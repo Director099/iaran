@@ -1,0 +1,79 @@
+@mixin icon() {
+  display: inline-block;
+  vertical-align: middle;
+  fill: $color-1;
+  margin-right: 5px;
+}
+
+.footer-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    display: block;
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 10px;
+    color: $black;
+    transition: $transition-time;
+
+    .icon {
+      @include icon();
+      stroke: $color-1;
+      stroke-width: 2px;
+    }
+
+    &:hover {
+      color: $color-1;
+    }
+  }
+
+  &__phone {
+    display: block;
+    color: $black;
+    text-decoration: none;
+    transition: $transition-time;
+
+    .icon {
+      @include icon();
+    }
+
+    &:hover {
+      color: $color-1;
+    }
+  }
+
+  &--left {
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      text-align: left;
+    }
+  }
+
+  &--center {
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      text-align: center;
+    }
+  }
+
+  &--right {
+    text-align: center;
+
+    @media(min-width: $screen-md) {
+      text-align: right;
+    }
+  }
+
+  @media(min-width: $screen-md) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

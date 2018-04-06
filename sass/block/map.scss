@@ -1,0 +1,32 @@
+.map {
+  position: relative;
+  max-height: 450px;
+  margin-top: 60px;
+
+  &__text {
+    position: absolute;
+    top: -18px;
+    left: 0;
+    right: 0;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 9px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 25px;
+    color: $white;
+    background: $color-1;
+    z-index: 2;
+
+    @include triangle-sides();
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 100%;
+    background: $color-1;
+  }
+}
