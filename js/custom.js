@@ -42,3 +42,13 @@ scrollClick(reservation);
   })
 
 })();
+
+(function() {
+  var allOpenPhoto = document.querySelector('#open-photo');
+  var fancy = document.querySelector('.photos__main');
+
+  allOpenPhoto.addEventListener('click', function() {
+    fancy.click();
+  })
+
+})();
