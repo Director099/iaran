@@ -1,0 +1,44 @@
+@@include('_include/header.html')
+  <main role="main">
+    <section class="container">
+      <h1 class="main-title">Авторизация</h1>
+      <div class="confirmations">
+        <form class="form-reg form-reg--pd-none" action="lk.html">
+          <label class="form-reg__group">
+            <span class="form-reg__text">Ваш e-mail</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Ваш e-mail" required="">
+              <!-- <p class="form-error">Неверный e-mail</p> -->
+            </div>
+          </label>
+          <label class="form-reg__group">
+            <span class="form-reg__text">Пароль</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Пароль" required="">
+              <!-- <p class="form-error">Неверный пароль</p> -->
+            </div>
+          </label>
+          <label class="form-confirm__checkbox form-confirm__checkbox--ident">
+            <input type="checkbox" required> Запомнить меня
+          </label>
+          <button class="btn btn--form">Войти</button>
+          <a class="form-reg__recovery" href="page-forgot.html">Забыли пароль ?</a>
+        </form>
+        <span class="or">или</span>
+        <div class="create-acount">
+          <p>Войти в аккаунт через</p>
+          <button class="btn btn--google">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google">
+            </use></svg> google</button>
+          <button class="btn btn--facebook">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook">
+            </use></svg> facebook</button>
+          <p>Создавая аккаунт вы соглашаетесь с условиями конфедициальности</p>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+@@include('_include/footer.html')

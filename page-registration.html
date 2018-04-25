@@ -1,0 +1,49 @@
+@@include('_include/header.html')
+  <main role="main">
+    <section class="container">
+      <h1 class="main-title">Регистрация</h1>
+      <div class="confirmations">
+        <form class="form-reg form-reg--pd-none" action="lk.html">
+          <label class="form-reg__group">
+            <span class="form-reg__text">Введите свой e-mail</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Введите свой e-mail" required="">
+              <!-- <p class="form-error">Не корректно введен e-mail</p> -->
+            </div>
+          </label>
+          <label class="form-reg__group">
+            <span class="form-reg__text">Придумайте пароль</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Придумайте пароль" required="">
+              <!-- <p class="form-error">Пароль должен содержать латиницу</p> -->
+            </div>
+          </label>
+          <label class="form-reg__group">
+            <span class="form-reg__text">Подтвердите пароль</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Подтвердите пароль" required="">
+              <!-- <p class="form-error">Пароль не совпадает</p> -->
+            </div>
+          </label>
+          <label class="form-confirm__checkbox form-confirm__checkbox--ident">
+            <input type="checkbox" required checked> Я принимаю правила, <a href="#">условия и положение</a> о конфедициальности
+          </label>
+          <button class="btn btn--form">Регистрация</button>
+        </form>
+        <span class="or">или</span>
+        <div class="create-acount">
+          <p>Войти в аккаунт через</p>
+          <button class="btn btn--google">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google">
+            </use></svg> google</button>
+          <button class="btn btn--facebook">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook">
+            </use></svg> facebook</button>
+          <p>Создавая аккаунт вы соглашаетесь с условиями конфедициальности</p>
+        </div>
+      </div>
+    </section>
+  </main>
+@@include('_include/footer.html')

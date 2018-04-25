@@ -21,10 +21,27 @@
     width: 100%;
   }
 
+  &__text-warning {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
   &__text {
     min-width: 210px;
     margin: 5px 0;
+  }
+
+  &--pd-none {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &__recovery {
+    display: block;
+    text-align: center;
+    color: $black;
+    margin-top: 20px;
+    text-decoration: underline;
   }
 
   .btn {

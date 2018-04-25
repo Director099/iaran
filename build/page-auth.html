@@ -242,144 +242,47 @@
     </div>
   </header>
 
-  <div class="img-search">
-  <div class="search">
-    <form class="search__form" action="search.html">
-      <span class="search__title">Поиск квартир:</span>
-      <input class="search__control search__control--calendar" data-toggle="datepicker" type="text" placeholder="Дата заезда">
-      <input class="search__control search__control--calendar" data-toggle="datepicker" type="text" placeholder="Дата выезда">
-      <label class="search__control search__control--bed">
-        <select class="">
-          <option>Колличество спален</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </label>
-      <button class="search__btn">Найти</button>
-    </form>
-  </div>
-  <ul class="advantages">
-    <li class="advantages__item">
-      <svg class="icon" width="15" height="15">
-        <use xlink:href="#check-mark">
-      </svg>
-      Качественный сервис
-    </li>
-    <li class="advantages__item">
-      <svg class="icon" width="15" height="15">
-        <use xlink:href="#bitcoin">
-      </svg>
-      Онлайн оплата
-    </li>
-    <li class="advantages__item">
-      <svg class="icon" width="15" height="15">
-        <use xlink:href="#coin">
-      </svg>
-      Доступные цены
-    </li>
-    <li class="advantages__item">
-      <svg class="icon" width="15" height="15">
-        <use xlink:href="#home-2">
-      </svg>
-      Уютные квартиры
-    </li>
-  </ul>
-</div>
-
   <main role="main">
-    <div class="sorting">
-      <div class="sorting__container">
-        <strong class="sorting__name">Доступные квартиры:</strong>
-        <div class="sorting__dropdown dropdown show">
-          <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Сортировать по</a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-menu__item" href="#">Цена: по возрастанию</a>
-            <a class="dropdown-menu__item" href="#">Цена: по убыванию</a>
-            <a class="dropdown-menu__item" href="index.html">Все объекты</a>
-          </div>
+    <section class="container">
+      <h1 class="main-title">Авторизация</h1>
+      <div class="confirmations">
+        <form class="form-reg form-reg--pd-none" action="lk.html">
+          <label class="form-reg__group">
+            <span class="form-reg__text">Ваш e-mail</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Ваш e-mail" required="">
+              <!-- <p class="form-error">Неверный e-mail</p> -->
+            </div>
+          </label>
+          <label class="form-reg__group">
+            <span class="form-reg__text">Пароль</span>
+            <div class="form-reg__block">
+              <input class="form-reg__control" type="text" placeholder="Пароль" required="">
+              <!-- <p class="form-error">Неверный пароль</p> -->
+            </div>
+          </label>
+          <label class="form-confirm__checkbox form-confirm__checkbox--ident">
+            <input type="checkbox" required> Запомнить меня
+          </label>
+          <button class="btn btn--form">Войти</button>
+          <a class="form-reg__recovery" href="page-forgot.html">Забыли пароль ?</a>
+        </form>
+        <span class="or">или</span>
+        <div class="create-acount">
+          <p>Войти в аккаунт через</p>
+          <button class="btn btn--google">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#google">
+            </use></svg> google</button>
+          <button class="btn btn--facebook">
+            <svg class="icon" width="15" height="15">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook">
+            </use></svg> facebook</button>
+          <p>Создавая аккаунт вы соглашаетесь с условиями конфедициальности</p>
         </div>
       </div>
-    </div>
-    <div class="list-apartaments">
-      <section class="list-apartaments__row">
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-1.jpg')"></div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-          </a>
-        </article>
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-2.jpg')"></div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-          </a>
-        </article>
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item disabled" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-3.jpg')">
-            </div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-            <p class="list-apartaments__warning">Не доступно до <time>27.05.18</time></p>
-          </a>
-        </article>
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-4.jpg')"></div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-          </a>
-        </article>
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-5.jpg')"></div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-          </a>
-        </article>
-        <article class="list-apartaments__column">
-          <a class="list-apartaments__item" href="single.html">
-            <div class="list-apartaments__img" role="img" style="background-image: url('img/apartament/pic-6.jpg')"></div>
-            <strong class="list-apartaments__places">2 комнаты 3 кровати</strong>
-            <h4 class="list-apartaments__title">Salehi blvd 114</h4>
-            <p class="list-apartaments__min">от 10$ За сутки</p>
-          </a>
-        </article>
-      </section>
-      <ul class="pagination">
-        <li class="pagination__item">
-          <a class="pagination__link" href="#"><</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link active" href="#">1</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">2</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">3</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">4</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">5</a>
-        </li>
-        <li class="pagination__item">
-          <a class="pagination__link" href="#">></a>
-        </li>
-      </ul>
-    </div>
+      </div>
+    </section>
   </main>
 	<div class="map" id="map">
     <p class="map__text">Поиск квартир по карте</p>

@@ -2853,6 +2853,8 @@ img {
   display: block;
   margin: 10px 0;
   text-align: center; }
+  .form-confirm__checkbox--ident {
+    margin: 20px 0; }
 
 .form-confirm .btn {
   display: block;
@@ -2895,9 +2897,21 @@ img {
     padding: 5px 10px; }
   .form-reg__block {
     width: 100%; }
+  .form-reg__text-warning {
+    text-align: center;
+    margin-bottom: 30px; }
   .form-reg__text {
     min-width: 210px;
     margin: 5px 0; }
+  .form-reg--pd-none {
+    padding-left: 0;
+    padding-right: 0; }
+  .form-reg__recovery {
+    display: block;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    text-decoration: underline; }
   .form-reg .btn {
     display: block;
     margin: 0 auto;

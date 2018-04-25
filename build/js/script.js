@@ -330,4 +330,5 @@ scrollClick(reservation);
   allOpenPhoto.addEventListener('click', function() {
     fancy.click();
   })
+
 })();
