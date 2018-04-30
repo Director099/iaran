@@ -3,4 +3,12 @@
   margin: 0 auto;
   padding: 25px 5%;
   border: 2px solid $color-1;
+
+  .btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+  }
 }
