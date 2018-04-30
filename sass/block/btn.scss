@@ -50,4 +50,12 @@
       color: $black;
     }
   }
+
+  &--center {
+    display: block;
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+  }
 }

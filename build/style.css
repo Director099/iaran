@@ -2097,6 +2097,12 @@ img {
     .btn--google:hover {
       background: #f7f7f7;
       color: black; }
+  .btn--center {
+    display: block;
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+    text-align: center; }
 
 .page-header {
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
@@ -2867,12 +2873,6 @@ img {
   margin: 0 auto;
   padding: 25px 5%;
   border: 2px solid #2f8a5f; }
-  .confirmations .btn {
-    display: block;
-    margin: 0 auto;
-    max-width: 310px;
-    width: 100%;
-    text-align: center; }
 
 .main-title {
   text-align: center;
@@ -2917,6 +2917,12 @@ img {
     color: black;
     margin-top: 20px;
     text-decoration: underline; }
+  .form-reg .btn {
+    display: block;
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+    text-align: center; }
 
 .or {
   display: flex;
