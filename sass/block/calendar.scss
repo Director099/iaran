@@ -1,0 +1,32 @@
+.calendar {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  flex-wrap: wrap;
+
+  .datepicker-container {
+    font-size: 16px;
+    width: 245px;
+    margin: 15px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  }
+
+  .datepicker-panel>ul>li {
+    width: 35px;
+    height: 32px;
+  }
+
+  .datepicker-panel>ul>li[data-view="month current"], .datepicker-panel>ul>li[data-view="year current"], .datepicker-panel>ul>li[data-view="years current"] {
+    width: 175px;
+  }
+
+  .datepicker-panel ul:first-child li {
+    background: $color-1;
+    color: $white;
+  }
+
+  .datepicker-panel ul:nth-child(2) li {
+    background: $gray-lighter;
+    color: $white;
+  }
+}

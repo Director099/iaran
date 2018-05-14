@@ -1,0 +1,29 @@
+.regulations {
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    // align-items: center;
+    margin-bottom: 10px;
+
+    .icon {
+      flex-shrink: 0;
+      margin-right: 15px;
+      fill: $color-1;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
