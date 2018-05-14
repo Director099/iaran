@@ -52,7 +52,7 @@ function initialize() {
         }
       }
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+// google.maps.event.addDomListener(window, 'load', initialize);
 
 $(function () {
     $.scrollUp({
@@ -280,3 +280,23 @@ Date.prototype.format = function (mask, utc) {
   return dateFormat(this, mask, utc);
 };
 
+(function() {
+  var paymentChoice = document.querySelectorAll('.payment-choice');
+
+  function removeAllClasses(element) {
+      for(var i = 0; i < paymentChoice.length; i++) {
+      element[i].classList.remove('active');
+    }
+  }
+
+  function clickActive(activeElement) {
+    activeElement.forEach(function(i) {
+      i.addEventListener('click', function() {
+        removeAllClasses(activeElement);
+        i.classList.add('active');
+      })
+    })
+  }
+
+  clickActive(paymentChoice);
+})()

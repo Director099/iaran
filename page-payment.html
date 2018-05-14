@@ -1,0 +1,41 @@
+@@include('_include/lk-header.html')
+  <main role="main">
+    <section class="container">
+      <h1 class="main-title">Способы оплаты</h1>
+      <form class="confirmations" action="page-requisites.html">
+        <div class="row">
+          <div class="col-lg-4">
+            <label class="payment-choice active">
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#banknote"></use>
+              </svg>
+              <p class="payment-choice__text">Оплата по реквизитам</p>
+              <input class="payment-choice__none" type="radio" name="radio" checked>
+            </label>
+          </div>
+          <div class="col-lg-4">
+            <label class="payment-choice">
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#payment"></use>
+              </svg>
+              <p class="payment-choice__text">Оплата биткойнами</p>
+              <input class="payment-choice__none" type="radio" name="radio">
+            </label>
+          </div>
+          <div class="col-lg-4">
+            <label class="payment-choice">
+              <svg class="icon" width="50" height="50">
+                <use xlink:href="#credit-card"></use>
+              </svg>
+              <p class="payment-choice__text">Оплата картой</p>
+              <input class="payment-choice__none" type="radio" name="radio">
+            </label>
+          </div>
+        </div>
+        <hr>
+        <p class="text-total">Сумма к оплате: 2000р</p>
+        <button class="btn btn--form btn--center">Оплатить</button>
+      </form>
+    </section>
+  </main>
+@@include('_include/footer-single.html')
