@@ -20,6 +20,10 @@
     width: 175px;
   }
 
+  .datepicker-panel>ul>li.disabled {
+    color: #e2e2e2;
+  }
+
   .datepicker-panel ul:first-child li {
     background: $color-1;
     color: $white;
@@ -28,5 +32,11 @@
   .datepicker-panel ul:nth-child(2) li {
     background: $gray-lighter;
     color: $white;
+  }
+
+  .datepicker-panel ul:nth-child(3) li:not(.disabled) {
+    background: $color-1;
+    color: $white;
+    border: 1px solid $white;
   }
 }
