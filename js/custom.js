@@ -52,7 +52,10 @@ function initialize() {
         }
       }
 }
-// google.maps.event.addDomListener(window, 'load', initialize);
+
+if (google.maps) {
+  google.maps.event.addDomListener(window, 'load', initialize);
+}
 
 $(function () {
     $.scrollUp({
@@ -277,6 +280,24 @@ dateFormat.i18n = {
 Date.prototype.format = function (mask, utc) {
   return dateFormat(this, mask, utc);
 };
+
+(function() {
+
+  var btnCollapse = document.querySelectorAll('.recall__open');
+
+  btnCollapse.forEach(function(i) {
+    i.addEventListener('click', function() {
+      var parentElement = i.offsetParent.querySelector('.recall__collapse');
+      i.classList.toggle('active');
+      parentElement.style.height = parentElement.scrollHeight + 15 + 'px';
+
+      if(!i.classList.contains('active')) {
+        parentElement.style.height = '65px';
+      }
+    })
+  })
+
+})();
 
 (function() {
   var paymentChoice = document.querySelectorAll('.payment-choice');
