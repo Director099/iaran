@@ -3,6 +3,7 @@
   padding: 0 0px 0 0px;
 
   &__link {
+    display: block;
     color: $black;
     transition: $transition-time;
     padding-right: 15px;
